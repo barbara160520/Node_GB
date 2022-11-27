@@ -13,5 +13,9 @@
   "dependencies": {
     "colors": "^1.4.0",
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "eslint": "^8.28.0"
   }
 }
