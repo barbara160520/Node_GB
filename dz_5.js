@@ -3,24 +3,10 @@ import fs from "fs";
 import path from "path";
 import { Transform } from "stream";
 
-
-const host = 'localhost';
+const host = "localhost";
 const port = 3000;
 
-
-/*const server = http.createServer((request, response) => {
-    const filePath = path.join(process.cwd(), './123.log')
-    const readStream = fs.createReadStream(filePath, {encoding: 'utf-8', highWaterMark: 64})
-
-    readStream.on('data', (chunk) => {
-        response.write(chunk)
-    })
-
-    readStream.on('end', () => {
-        response.end()
-    })
-})*/
-
+const list = [];
 const fsp = fs.promises;
 
 const links = (arr, currentUrl) => {
@@ -71,4 +57,4 @@ const server = http.createServer((request, response) => {
   }
 });
 
-server.listen(port, host, () => console.log(`Server running at http://${host}:${port}`))
+server.listen(port, host, () => console.log(`Сервер работает на http://${host}:${port}`));
