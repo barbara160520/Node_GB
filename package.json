@@ -1,0 +1,28 @@
+{
+  "name": "node_gb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "reader": "/index.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.18.2",
+    "inquirer": "^9.1.4",
+    "moment": "^2.29.4",
+    "socket.io": "^4.5.4",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "eslint": "^8.28.0"
+  }
+}
